@@ -1,0 +1,64 @@
+.grid
+    list-style none
+    margin 0 auto
+    padding 0
+
+    &.is-loading
+        background url('../img/loader.gif') no-repeat center center
+        height 350px
+
+        .grid-item
+            visibility hidden
+
+.grid-item
+    border-radius 4px
+    box-shadow 0 8px 12px rgba(0,0,0,0.1)
+    display inline-block
+    margin-bottom 20px
+    transition all 0.3s linear
+    transform-style preserve-3d
+    z-index 2
+
+    &::before, &::after
+        background url('../img/settings-bg.png') #fff
+        border-radius 4px
+        border 1px solid #ccc
+        bottom -2px
+        content ""
+        height 10px
+        left 2px
+        margin 0 auto
+        position absolute
+
+    &::before
+        bottom -4px
+        left 4px
+        width 295px
+        z-index 5
+
+    &::after
+        width 300px
+        z-index 10
+
+    &.filtered
+        pointer-events none
+        opacity 0
+        z-index 1
+
+.grid-item-inner
+    background url('../img/settings-bg.png'), linear-gradient(top, #f5f5f5 0%, #f0f0f0 100%)
+    border 1px solid #d5d5d5
+    border-radius 4px
+    box-shadow 0 1px 0 #fff inset
+    font-size 13px
+    text-shadow 1px 1px 0 #fff
+    padding 15px
+    position relative
+    width 305px
+    z-index 15
+
+.grid-item-content
+    border-radius 4px
+    margin 10px auto
+    position relative
+    word-wrap break-word

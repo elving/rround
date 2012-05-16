@@ -1,0 +1,94 @@
+.menu
+    background #3b3b3b
+    background url('../img/menu-bg.png'), linear-gradient(top, #3b3b3b, #222)
+    border-top 1px solid #505050
+    border-bottom 1px solid #000
+    box-shadow 0 1px 8px rgba(0,0,0,0.1)
+    color #fff
+    min-width 775px
+    padding 10px 5%
+    position fixed
+    top -60px
+    transition top 0.5s ease-in-out
+    text-shadow 1px 1px 0 #000
+    width 100%
+    z-index 50
+
+.menu-logo
+    color #000
+    font-size 28px
+    float left
+    text-shadow 0 1px 0 rgba(255, 255, 255, .2), 0 0 30px rgba(255, 255, 255, .3)
+
+.menu-about
+    color #fff
+    font-size 17px
+    float left
+    text-shadow 1px 1px 0 #000
+    margin 6px 5px 0 0
+
+    &:hover, &:visited
+        color #fff
+
+.menu-location
+    margin 7px 10px
+    text-shadow 0 1px 0 #000, 0 0 30px rgba(255, 255, 255, 0.5)
+    color #fff
+
+.menu-list
+    float right
+
+    .menu-item
+        display block
+        float left
+        margin-left -1px
+
+        &:first-child
+            .menu-link
+                border-radius 4px 0 0 4px
+
+        &:last-child
+            .menu-link
+                border-radius 0 4px 4px 0
+
+.menu-link
+    background transparent
+    border 1px solid #000
+    box-shadow 1px 1px 0 #505050 inset, 0 1px 0 #444
+    color #fff
+    display inline-block
+    font-size 14px
+    text-decoration none
+    padding 5px 10px
+    vertical-align middle
+    text-align center
+
+    &:hover, &:focus, &:active, &:visited
+        color #fff
+        text-decoration none
+
+    &.is-selected, &:active
+        background-color #444
+        box-shadow 0 0 10px #000 inset, 0 1px 0 #444
+
+        .menu-count
+            background #333
+            box-shadow 0 1px #555
+
+    .menu-text
+        display inline-block
+        vertical-align middle
+
+    .menu-count
+        background #555
+        border-radius 50px
+        box-shadow 0 0 2px rgba(0, 0, 0, 0.6) inset, 0 1px #555
+        border 1px solid #111
+        float right
+        margin-left 5px
+        padding 2px 4px 0
+        font-size 12px
+
+    .menu-icon
+        display inline-block
+        vertical-align middle

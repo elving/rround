@@ -1,0 +1,10 @@
+dependencies:
+    - json2.js
+    - modernizr.js
+    - jquery.js
+    - jquery-ui.js
+    - jquery.transition.min.js
+    - isotope.js
+    - leaflet.js
+    - underscore.js
+    - backbone.js

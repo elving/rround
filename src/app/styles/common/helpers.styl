@@ -1,0 +1,23 @@
+.ir
+    display block
+    border 0
+    text-indent -999em
+    overflow hidden
+    background-color transparent
+    background-repeat no-repeat
+    text-align left
+    direction ltr
+    *line-height 0
+
+    br
+        display none
+
+.clearfix
+    *zoom 1
+
+    &::before, &::after
+        content ""
+        display table
+
+    &::after
+        clear both

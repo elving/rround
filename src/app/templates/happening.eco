@@ -1,0 +1,65 @@
+<article class="happening <%- @service %> grid-item-inner" <% unless @foursquare: %> data-person="<%- @name %>" <% end %>>
+    <% if @twitter: %>
+        <header class="happening-header clearfix">
+            <img class="happening-image l-left" src="<%- @image %>" height="32" width="32" alt="img"/>
+            <a class="happening-name bold" href="<%- @url %>" target="_blank"><%- @name %></a>
+        </header>
+        <div class="happening-content grid-item-content">
+            <p class="appening-image"><%- @update.tweet %></p>
+        </div>
+        <footer class="happening-footer clearfix">
+            <a href="<%- @updateUrl %>" target="_blank" class="happening-metadata-time l-left"><i class="icon-time"></i><%- @timeAgo %></a>
+            <span class="happening-metadata-km getMapLocation l-right"><i class="icon-map-marker"></i><%- @distance %></span>
+        </footer>
+    <% end %>
+
+    <% if @instagram: %>
+        <header class="happening-header clearfix">
+            <a href="<%- @updateUrl %>" target="_blank" class="happening-metadata-time l-left"><i class="icon-time"></i><%- @timeAgo %></a>
+            <span href="#map" class="happening-metadata-km l-right"><i class="icon-map-marker"></i><%- @distance %></span>
+        </header>
+        <div class="happening-content grid-item-content">
+            <figure>
+                <img class="instagram-photo" width="273" height="275" title="<% if @update.caption: %><%- @update.caption %><% end %>" src="<%- @update.photo %>"/>
+                <% if @update.caption: %>
+                    <figcaption class="is-hidden"><%- @update.caption %></figcaption>
+                <% end %>
+            </figure>
+        </div>
+        <footer class="happening-footer clearfix">
+            <span class="instagram-metadata-likes l-right"><i class="icon-heart"></i><%- @update.likes %></span>
+            <img class="instagram-metadata-avatar l-left" src="<%- @image %>" height="18" width="18" alt="img" />
+            <span class="instagram-metadata-name bold" href="<%- @url %>" target="_blank"><%- @name %></span>
+        </footer>
+    <% end %>
+
+    <% if @youtube: %>
+        <header class="happening-header clearfix">
+            <img class="happening-image l-left" src="<%- @image %>" height="32" width="32" alt="img"/>
+            <figcaption><a class="happening-name bold" href="<%- @url %>" target="_blank"><%- @name %></a></figcaption>
+        </header>
+        <div class="happening-content grid-item-content">
+            <iframe class="youtube-video" title="YouTube video player" width="273" height="275" src="http://www.youtube.com/embed/<%- @update.video %>?&html5=1" frameborder="0"></iframe>
+            <p class="youtube-title"><%- @update.title %></p>
+        </div>
+        <footer class="happening-footer clearfix">
+            <a href="<%- @updateUrl %>" target="_blank" class="happening-metadata-time l-left"><i class="icon-time"></i><%- @timeAgo %></a>
+            <span class="happening-metadata-km getMapLocation l-right"><i class="icon-map-marker"></i><%- @distance %></span>
+        </footer>
+    <% end %>
+
+    <% if @foursquare: %>
+        <header class="happening-header clearfix">
+            <a href="<%- @updateUrl %>" target="_blank" class="happening-metadata-time l-left"><i class="icon-time"></i><%- @timeAgo %></a>
+            <span href="#map" class="happening-metadata-km l-right"><i class="icon-map-marker"></i><%- @distance %></span>
+        </header>
+        <div class="happening-content grid-item-content">
+            <figure>
+                <img class="foursquare-map" src="http://maps.google.com/maps/api/staticmap?center=<%- @location.latitude %>,<%- @location.longitude %>&zoom=14&size=273x275&maptype=roadmap&sensor=false&markers=<%- @location.latitude %>,<%- @location.longitude %>" width="273" height="275" />
+            </figure>
+        </div>
+        <footer class="happening-footer">
+            <p class="foursquare-title"><%- @update %> <a href="<%- @url %>"><%- @name %></a></p>
+        </footer>
+    <% end %>
+</article>

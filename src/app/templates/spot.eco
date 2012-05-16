@@ -1,0 +1,16 @@
+<article class="spot grid-item-inner">
+    <header class="spot-header clearfix">
+        <span class="spot-metadata-checkins l-left">
+            <i class="icon-map-marker"></i><%= @checkins %><% if @checkins is 1: %> checkin <% else: %> checkins <% end %>
+        </span>
+        <span class="spot-metadata-km l-right"><i class="icon-home"></i><%- @distance %></span>
+    </header>
+    <div class="spot-content grid-item-content">
+        <figure>
+            <img class="foursquare-map" src="http://maps.google.com/maps/api/staticmap?center=<%- @location.latitude %>,<%- @location.longitude %>&zoom=18&size=273x275&maptype=roadmap&sensor=false&markers=<%- @location.latitude %>,<%- @location.longitude %>" width="100%" />
+        </figure>
+    </div>
+    <footer class="spot-footer">
+        <p class="foursquare-title"><%- @update %> <a href="<%- @url %>"><%- @name %></a></p>
+    </footer>
+</article>

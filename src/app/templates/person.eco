@@ -1,0 +1,8 @@
+<article class="person grid-item-inner clearfix">
+    <img src="<%- @image %>" class="person-image l-left" height="42" width="42" />
+    <div class="person-info">
+        <a class="person-name" href="<%= @url %>" target="_blank"><%= @name %></a>
+        <span class="person-time"><i class="icon-time"></i><%- @timeAgo %></span>
+        <span class="person-radius"><i class="icon-map-marker"></i><%- @distance %></span>
+    </div>
+</article>

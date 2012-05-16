@@ -1,0 +1,93 @@
+.welcome
+    background #fafafa
+    border 1px solid #bbbbbb
+    border-radius 5px
+    box-shadow 0 2px 5px rgba(0, 0, 0, 0.2)
+    left 50%
+    margin -250px 0 0 -325px
+    position absolute
+    transition top 0.3s ease-in-out
+    top 50%
+    width 650px
+    z-index 10
+
+    &.is-loading
+        background url('../img/loader.gif') no-repeat center center
+        border 0 none
+        box-shadow none
+        height 290px
+
+    &.is-loading-data
+        background url('../img/loader.gif') no-repeat center 128px
+        border 0 none
+        box-shadow none
+        transition opacity 0.2s linear, border 0.2s linear, box-shadow 0.2s linear
+
+        .welcome-form, .welcome-footer
+            cursor default
+            pointer-events none
+            opacity 0
+
+
+    .welcome-header, .welcome-content, .welcome-footer
+        padding 15px
+        text-align center
+
+    .welcome-header
+        border-top 1px solid #ffffff
+        border-radius 5px 5px 0 0
+        padding-bottom 0
+
+        .welcome-title, .welcome-text
+            margin 0 auto
+
+    .welcome-text
+        font 28px 'CartoGothicStdBook', Arial, Serif
+
+    .welcome-form, .welcome-radius
+        margin 25px auto 0
+        width 450px
+
+    .welcome-location
+        background #FEFEFE
+        border 1px solid #CCCCCC
+        border-radius 4px
+        box-shadow 0 0 6px rgba(0,0,0,0.20) inset, 0 1px 0 #fff
+        font-size 18px
+        padding 10px 0 8px
+        text-align center
+        text-indent 10px
+        width 100%
+
+    .welcome-location[readonly]
+        cursor default
+
+    .welcome-location.is-loading
+        background url('../img/loader-mini.gif') no-repeat 425px center
+        min-height 20px
+
+    .welcome-footer
+        background #eeeeee
+        border-top 1px solid #cccccc
+        border-radius 0 0 5px 5px
+        box-shadow 0 1px 0 #ffffff inset
+
+    .welcome-start
+        background-color #00a7e4
+        background-image linear-gradient(top,  #00a7e4 0%,#007fba 100%)
+        border 1px solid #0097DD
+        border-color #184879 #2164A8 #0097DD #2164A8
+        box-shadow 0 8px 0 #184879
+        color #ffffff !important
+        display inline-block
+        padding 10px 40px 7px
+        border-radius 8px
+        font 2em 'CartoGothicStdBook', Arial, Serif
+        margin 0 auto 8px
+        text-align center
+        text-decoration none
+        text-shadow 1px 1px 0 #184879
+
+    .welcome-start:active
+        box-shadow 0 4px 0 #184879
+        margin 4px auto

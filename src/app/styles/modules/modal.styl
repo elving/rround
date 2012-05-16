@@ -1,0 +1,86 @@
+.modal-overlay
+    background rgba(0, 0, 0, 0.4)
+    height 100%
+    left 0
+    position absolute
+    pointer-events none
+    top 0
+    width 100%
+    z-index 1000
+
+    &.is-visible
+        display block
+
+    &.is-hidden
+        display none
+
+.modal
+    background #fafafa
+    border-radius 5px
+    box-shadow 0 2px 8px rgba(0, 0, 0, 0.4)
+    left 50%
+    margin -250px 0 0 -325px
+    position absolute
+    transition top 0.4s linear
+    width 650px
+    z-index 1500
+
+    &.is-visible
+        top 50%
+
+    &.is-hidden
+        top -25%
+
+    .modal-header, .modal-footer
+        padding 10px
+
+    .modal-content
+        padding 20px 10px
+
+    .modal-header
+        border-bottom 1px solid #dddddd
+        border-radius 5px 5px 0 0
+        box-shadow 0 1px 0 #ffffff
+
+        .modal-title
+            font-size 18px
+
+    .modal-footer
+        background #eeeeee
+        border-top 1px solid #cccccc
+        border-radius 0 0 5px 5px
+        box-shadow 0 1px 0 #ffffff inset
+        padding 10px
+
+        .modal-action
+            display inline-block
+            padding 6px 10px 5px
+            font-size 13px
+            line-height 1
+            color #ffffff
+            text-shadow 0 -1px 0 #000
+            text-align center
+            vertical-align middle
+            cursor pointer
+            background-repeat repeat-x
+            border 1px solid #00477a
+            background-color #00a7e4
+            background-image linear-gradient(top,  #00a7e4 0%,#007fba 100%)
+            border 1px solid #184879
+            box-shadow 0 1px 0 rgba(255,255,255,0.35) inset, 0 1px 0 #fff
+            border-radius 4px
+            float right
+            marign-left 10px
+
+            &:hover
+                text-decoration none
+
+            &:focus, &:active
+                box-shadow 0 0 8px rgba(0,0,0,0.5) inset
+
+    .modal-title, .modal-text
+        margin 0 auto
+
+    .modal-text
+        font-size 14px
+        line-height 22px

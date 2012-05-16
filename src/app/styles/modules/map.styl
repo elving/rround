@@ -1,0 +1,32 @@
+.map-container
+    height 100%
+    left 0
+    top 50px
+    position absolute
+    width 100%
+
+    .leaflet-marker-pane > img
+        z-index 10000000 !important
+
+    .map-marker-wrapper
+        background #fff
+        border 5px solid #fff
+        border-radius 3px
+        box-shadow 0 1px 8px rgba(0, 0, 0, 0.5)
+        position absolute
+        height 52px
+        width 52px
+        margin -10px 0 0 -10px
+
+        &:hover
+            z-index 100000000 !important
+
+        &:after
+            content: ""
+            border-left 8px solid transparent
+            border-right 8px solid transparent
+            border-top 8px solid #fff
+            bottom -13px
+            margin-left -8px
+            left 50%
+            position absolute

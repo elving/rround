@@ -1,0 +1,13 @@
+<div class="welcome-content">
+    <p class="welcome-text">rround is a fun and simple way to discover people, places and things happening around you!</p>
+    <div class="welcome-form">
+        <input type="text" name="welcome-location" class="welcome-location is-loading" readonly placeholder="Getting your location..." />
+    </div>
+</div>
+<footer class="welcome-footer">
+    <% if @geolocation is on: %>
+        <a href="#" class="welcome-start is-disabled">Try it out!</a>
+    <% else: %>
+        <p>Looks like you'll need to update your browser to use this app :(</p>
+    <% end %>
+</footer>

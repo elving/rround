@@ -1,0 +1,92 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>rround</title>
+        <meta name="description" content="rround is a simple and fun way to discover people and things happening around you.">
+        <meta name="keywords" content="rround,rroundme,rround.me,around,aroundme,around.me,location,geolocation,discover,local">
+        <meta name="author" content="Elving Rodriguez">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="stylesheet" href="build/web/css/main.css">
+    </head>
+
+    <body>
+        <header id="header">
+            <div class="menu">
+                <a href="#" class="menu-about"><i class="icon-question-sign"></i></a>
+                <h1 class="menu-logo">rround</h1>
+            </div>
+        </header>
+        <!-- /header -->
+
+        <div id="content">
+            <section class="welcome is-loading"></section>
+            <section class="data">
+                <section class="happenings is-hidden">
+                    <ul class="happenings-list grid is-loading"></ul>
+                </section>
+                <section class="people is-hidden">
+                    <ul class="people-list grid is-loading"></ul>
+                </section>
+                <section class="spots is-hidden">
+                    <ul class="spots-list grid is-loading"></ul>
+                </section>
+                <section class="map">
+                    <div class="map-container"></div>
+                </section>
+            </section>
+        </div>
+        <!-- /content -->
+
+        <footer id="footer">
+            <div class="settings-wrapper">
+                <section class="settings">
+                    <div class="l-right">
+                        <i class="icon-search"></i>
+                        <input type="search" class="settings-search" placeholder="Search" />
+                    </div>
+                    <div class="settings-radius clearfix">
+                        <span class="settings-radiusText l-left">1km</span>
+                        <div class="settings-radiusControl l-left"></div>
+                        <span class="settings-radiusText l-left">5km</span>
+                    </div>
+                    <div class="settings-services">
+                        <span class="settings-service twitter">
+                            <input type="checkbox" class="settings-service-check" value="twitter" id="settings-service-twitter" checked />
+                            <label class="settings-service-toggle" for="settings-service-twitter" data-service="twitter"><i class="icon-twitter-sign"></i></label>
+                        </span>
+                        <span class="settings-service instagram">
+                            <input type="checkbox" class="settings-service-check" value="instagram" id="settings-service-instagram" checked />
+                            <label class="settings-service-toggle" for="settings-service-instagram" data-service="instagram"><i class="icon-camera-retro"></i></label>
+                        </span>
+                        <span class="settings-service youtube">
+                            <input type="checkbox" class="settings-service-check" value="youtube" id="settings-service-youtube" checked />
+                            <label class="settings-service-toggle" for="settings-service-youtube" data-service="youtube"><i class="icon-facetime-video"></i></label>
+                        </span>
+                        <span class="settings-service foursquare">
+                            <input type="checkbox" class="settings-service-check" value="foursquare" id="settings-service-foursquare" checked />
+                            <label class="settings-service-toggle" for="settings-service-foursquare" data-service="foursquare"><i class="icon-map-marker"></i></label>
+                        </span>
+                    </div>
+                </section>
+            </div>
+        </footer>
+        <!-- /footer -->
+
+        <div class="modal-overlay is-hidden"></div>
+        <section class="modal is-hidden"></section>
+
+        <script src="build/web/js/app.js"></script>
+        <script>require('initialize');</script>
+        <script>
+            var _gaq=[["_setAccount","UA-24053675-1"],["_trackPageview"]];
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
+            g.src=("https:"==location.protocol?"//ssl":"//www")+".google-analytics.com/ga.js";
+            s.parentNode.insertBefore(g,s)}(document,"script"));
+        </script>
+    </body>
+</html>

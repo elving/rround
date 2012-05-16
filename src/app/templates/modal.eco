@@ -1,0 +1,9 @@
+<header class="modal-header">
+    <h1 class="modal-title"><%- @message %></h1>
+</header>
+<div class="modal-content">
+    <p class="modal-text"><%- @tip %></p>
+</div>
+<footer class="modal-footer clearfix">
+    <a href="#" class="modal-discard modal-action">Ok</a>
+</footer>
