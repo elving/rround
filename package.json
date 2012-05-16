@@ -16,6 +16,7 @@
         "url": "https://raw.github.com/elving/rround/master/LICENSE"
     }],
     "engine": {
-        "node": ">=0.6"
+        "node": "0.6.x",
+        "npm": "1.1.x"
     }
 }
