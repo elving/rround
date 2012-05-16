@@ -1,9 +1,21 @@
 {
-  "name": "rround",
-  "version": "0.0.1",
-  "dependencies": {
-    "coffee-script": "1.3.3",
-    "brunch": "0.8.1",
-    "express": "2.5.9"
-  }
+    "name": "rround",
+    "version": "0.0.1",
+    "author": "Elving Rodriguez",
+    "dependencies": {
+        "coffee-script": "1.3.3",
+        "brunch": "0.8.1",
+        "express": "2.5.9"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/elving/rround.git"
+    },
+    "licenses": [{
+        "type": "MIT",
+        "url": "https://raw.github.com/elving/rround/master/LICENSE"
+    }],
+    "engine": {
+        "node": ">=0.6"
+    }
 }
