@@ -32,7 +32,6 @@ module.exports = class MenuView extends Backbone.View
 
     about: (event) ->
         event.preventDefault()
-        console.log 'yeah'
         rround.views.modal.render
             message: 'About'
             tip: AboutTemplate()
