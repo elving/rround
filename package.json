@@ -15,7 +15,7 @@
         "type": "MIT",
         "url": "https://raw.github.com/elving/rround/master/LICENSE"
     }],
-    "engine": {
+    "engines": {
         "node": "0.6.x",
         "npm": "1.1.x"
     }
