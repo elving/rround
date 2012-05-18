@@ -18,6 +18,7 @@ module.exports = class AppView extends Backbone.View
         @model.set isMobile: Modernizr.mq 'only screen and (max-width: 480px)'
 
     getData: =>
+        navigator.geolocation.clearWatch @model.get 'locationWatcher'
         @model.getData()
 
     toggleSection: (section) ->

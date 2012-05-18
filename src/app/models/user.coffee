@@ -9,7 +9,7 @@ module.exports = class UserModel extends Backbone.Model
             tip: attributes.tip
 
     locate: ->
-        navigator.geolocation.getCurrentPosition(
+        rround.models.app.set locationWatcher: navigator.geolocation.watchPosition(
             (position) =>
                 hasSpot = if position.address? and position.address.city? and position.address.countryCode? then yes else no
                 location =
