@@ -54,6 +54,9 @@ module.exports = class AppModel extends Backbone.Model
                 rround.collections.happenings.reset @get 'happenings'
                 rround.collections.people.reset @get 'people'
                 rround.collections.spots.reset @get 'spots'
+
+                rround.views.menu = new MenuView = require 'views/menu'
+
         ).fail(
             (error) =>
                 @set serviceFails: serviceFails += 1

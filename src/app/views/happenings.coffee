@@ -19,7 +19,6 @@ module.exports = class HappeningsView extends Backbone.View
 
     firstRender: ->
         @$el.removeClass 'is-loading'
-        rround.views.menu = new MenuView = require 'views/menu'
         @options.firstRender = no
 
     addOne: (happening) =>
