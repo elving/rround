@@ -74,10 +74,7 @@ em{font-family:'CartoGothicStdItalic';font-weight:normal}
 .clearfix{*zoom:1;}
 .clearfix::before,.clearfix::after{content:"";display:table}
 .clearfix::after{clear:both}
-@media (max-width: 480px){.menu-list{float:left !important;margin-left:20px}
-#content{padding:0 10%}
-.settings,.menu-text,.menu-location{display:none !important}
-}.modal-overlay{background:rgba(0,0,0,0.4);height:100%;left:0;position:fixed;top:0;width:100%;z-index:1000;}
+.modal-overlay{background:rgba(0,0,0,0.4);height:100%;left:0;position:fixed;top:0;width:100%;z-index:1000;}
 .modal-overlay.is-visible{display:block}
 .modal-overlay.is-hidden{display:none}
 .modal{background:#fafafa;-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px;-webkit-box-shadow:0 2px 8px rgba(0,0,0,0.4);-moz-box-shadow:0 2px 8px rgba(0,0,0,0.4);box-shadow:0 2px 8px rgba(0,0,0,0.4);left:50%;margin:-250px 0 0 -325px;position:fixed;-webkit-transition:top .3s ease-in-out;-moz-transition:top .3s ease-in-out;transition:top .3s ease-in-out;width:650px;z-index:1500;}
@@ -175,3 +172,18 @@ em{font-family:'CartoGothicStdItalic';font-weight:normal}
 .person-name{display:block;font-size:14px;margin-bottom:5px}
 .person-time{display:block}
 .spot-metadata-km .icon-home{margin-right:3px}
+@media (max-width: 480px){#header{margin-bottom:10px}
+#content{padding:0 2% 0 2.3%;margin:0}
+.menu{min-width:100%;padding:10px 2%;}
+.menu .menu-about{display:none}
+.menu .menu-list{margin-left:5px;}
+.menu .menu-list .menu-link{padding:5px;}
+.menu .menu-list .menu-link .menu-count{margin-left:2px}
+.settings,.menu-text,.menu-location{display:none !important}
+.modal{margin:0;left:2.3%;top:10% !important;width:95%}
+.welcome{margin:0;left:auto;top:10%;width:95%;}
+.welcome .welcome-text{font:1em 'CartoGothicStdBook',Arial,Serif;margin:5px auto}
+.welcome .welcome-form{margin:15px auto 0;width:100%;}
+.welcome .welcome-form .welcome-location{font-size:1em}
+.welcome .welcome-start{font:1.5em 'CartoGothicStdBook',Arial,Serif;padding:10px 20px 7px}
+}

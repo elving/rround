@@ -15,6 +15,8 @@ module.exports = class AppView extends Backbone.View
 
         @model = rround.models.app
 
+        @model.set isMobile: Modernizr.mq 'only screen and (max-width: 480px)'
+
     getData: =>
         @model.getData()
 

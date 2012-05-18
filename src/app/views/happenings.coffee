@@ -30,15 +30,18 @@ module.exports = class HappeningsView extends Backbone.View
         unless @collection.length is 0
             @collection.each @addOne
             @$el.parent().show() if @options.firstRender
-            @$el.isotope
-                itemSelector: @$el.find('li').not '.filtered'
-                animationEngine: 'css'
-                hiddenClass: 'filtered'
-                masonry:
-                    columnWidth: 305
-                    gutterWidth: 20
-                onLayout: =>
-                    @firstRender() if @options.firstRender
+            unless rround.models.app.get 'isMobile'
+                @$el.isotope
+                    itemSelector: @$el.find('li').not '.filtered'
+                    animationEngine: 'css'
+                    hiddenClass: 'filtered'
+                    masonry:
+                        columnWidth: 305
+                        gutterWidth: 20
+                    onLayout: =>
+                        @firstRender() if @options.firstRender
+            else
+                @firstRender() if @options.firstRender
         else
             @$el.prepend '<li class="is-empty">There are no happenings rround you :(</li>'
             if @options.firstRender
