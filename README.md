@@ -47,3 +47,13 @@ Run Server
 or
 
 	coffee server
+
+### APIs
+You'll need to have a file name keys.coffee in the app/common folder. It needs to look like this:
+
+	module.exports =
+	    instagram: '0000' #Instagram API KEY
+	    cloudmade: '0000' #Cloudmade API KEY
+	    foursquare:
+	        clientId: '0000' #Foursquare Client ID
+	        clientSecret: '0000' #Foursquare Client Secret
