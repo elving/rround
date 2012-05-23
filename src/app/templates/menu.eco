@@ -1,6 +1,9 @@
 <div class="menu-location l-left">
     @ <%- @location.spot %> (<%- @location.latitude %>, <%- @location.longitude %>)
 </div>
+<a href="https://twitter.com/intent/tweet?text=<%- @shareText %>&via=rroundme&url=http%3A%2F%2Frround.me&related=rroundme,elving" class="menu-share" title="Share" target="_blank">
+    <i class="icon-twitter-sign"></i>
+</a>
 <nav class="clearfix">
     <ul class="menu-list">
         <li class="menu-item">

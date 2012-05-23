@@ -128,8 +128,8 @@ em{font-family:'CartoGothicStdItalic';font-weight:normal}
 .welcome .welcome-start:active{-webkit-box-shadow:0 4px 0 #184879;-moz-box-shadow:0 4px 0 #184879;box-shadow:0 4px 0 #184879;margin:4px auto}
 .menu{background:#3b3b3b;background:url("../img/menu-bg.png"),-webkit-gradient(linear, left top, left bottom, color-stop(0, #3b3b3b), color-stop(1, #222));background:url("../img/menu-bg.png"),-webkit-linear-gradient(top, #3b3b3b 0%, #222 100%);background:url("../img/menu-bg.png"),-moz-linear-gradient(top, #3b3b3b 0%, #222 100%);background:url("../img/menu-bg.png"),linear-gradient(top, #3b3b3b 0%, #222 100%);border-top:1px solid #505050;border-bottom:1px solid #000;-webkit-box-shadow:0 1px 8px rgba(0,0,0,0.1);-moz-box-shadow:0 1px 8px rgba(0,0,0,0.1);box-shadow:0 1px 8px rgba(0,0,0,0.1);color:#fff;min-width:775px;padding:10px 5%;position:fixed;top:-60px;-webkit-transition:top .5s ease-in-out;-moz-transition:top .5s ease-in-out;transition:top .5s ease-in-out;text-shadow:1px 1px 0 #000;width:100%;z-index:50}
 .menu-logo{color:#000;font-size:28px;float:left;text-shadow:0 1px 0 rgba(255,255,255,0.2),0 0 30px rgba(255,255,255,0.3)}
-.menu-about{color:#fff;font-size:17px;float:left;text-shadow:1px 1px 0 #000;margin:6px 5px 0 0;}
-.menu-about:hover,.menu-about:visited{color:#fff}
+.menu-about,.menu-share{color:#fff;font-size:17px;float:left;text-shadow:1px 1px 0 #000;margin:6px 5px 0 0;}
+.menu-about:hover,.menu-share:hover,.menu-about:visited,.menu-share:visited{color:#fff}
 .menu-location{margin:7px 10px;text-shadow:0 1px 0 #000,0 0 30px rgba(255,255,255,0.5);color:#fff}
 .menu-list{float:right;}
 .menu-list .menu-item{display:block;float:left;margin-left:-1px;}

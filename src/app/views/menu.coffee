@@ -12,12 +12,22 @@ module.exports = class MenuView extends Backbone.View
         @render()
 
     render: ->
+        location = rround.models.user.get 'location'
+        shareText = "#{rround.collections.happenings.length}%20"
+        shareText += if rround.collections.happenings.length is 1 then 'Happening,%20' else 'Happenings,%20'
+        shareText += "#{rround.collections.people.length}%20"
+        shareText += if rround.collections.people.length is 1 then 'person,%20' else 'people,%20'
+        shareText += "and%20#{rround.collections.spots.length}%20"
+        shareText += if rround.collections.spots.length is 1 then 'spot%20%23rround%20me' else 'spots%20%23rround%20me'
+        shareText += "%20@%20#{location.spot}%20(#{location.latitude},%20#{location.longitude})"
+
         @$el.append(
             MenuTemplate
-                location: rround.models.user.get 'location'
+                location: location
                 happenings: rround.collections.happenings.length
                 people: rround.collections.people.length
                 spots: rround.collections.spots.length
+                shareText: shareText
         ).animate
             top: 0, 500, -> rround.views.settings = new SettingsView = require 'views/settings'
 
